@@ -1,0 +1,269 @@
+body{
+    font-family: sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    box-shadow: 0 2px 8px 0 rgba(178, 177, 177, 0.997);
+    margin-bottom: 5px;
+}
+.search{
+    border-radius: 5px;
+    width: 50%;
+    padding-left: "5px"
+}
+.iconsDiv{
+    display:flex;
+    justify-content: space-evenly;
+    width: 40%
+}
+.searchBar{
+    width: 100vw;
+    height: auto;
+}
+.asideLineItem{
+    display: block;
+    font-size: 1.2rem;
+    list-style: none;
+    text-underline-position: below;
+    color: rgb(69, 122, 228);
+}
+.contentDiv{
+    display: flex;
+    width: 100%;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    width: 15%;
+    max-height: 100vh;
+    align-self: stretch;
+    padding: 3%;
+    box-sizing: border-box;
+    box-shadow: 3.5px 0px 3px 4px rgb(88, 144, 234);
+    margin-right: 3%;
+    top:2px;
+}
+.products{
+    display: flex;
+    width: 80%;
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 3%;
+}
+.icons{
+    width: 20px;
+    height: 20px;
+}
+.fastIcons{
+    width: 40px;
+    height: 40px;
+}
+.cardsDiv{
+     width:18rem;
+      margin: 3%
+}
+.cardImage{
+    max-height:250px;
+     max-width:100%
+}
+/* SignIN page */
+.signIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+}
+.link{
+    text-decoration: none;
+    color:gray
+}
+.formDiv{
+    height: auto;
+    width: 30%;
+    min-width:250px;
+    background-color: #fff;
+    box-shadow: 0 40px 80px -40px #000;
+    border-radius: 14px;
+    padding-top: 1%;
+    min-height: 250px;
+    color:#000;
+  }
+  .formInput{
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px 0px;
+    padding-left: 15px;
+    outline: none;
+    border: .5px solid gray;
+    margin-left: 10%;
+  }
+  .form{
+    padding: 10px;
+    padding-top: 20px;
+  }
+  .submitButton{
+  background-color:rgb(238,116,30);
+  border:none;
+  border-radius:3px;
+  margin-top:5%;
+  width: 80%;
+  height: 30px;
+  margin-left: 10%;
+  color:#fff;
+  margin-bottom: 30px;
+}
+.cartHeader{
+    text-align: center;
+    color: rgb(255,183,79);
+    margin-top: 10%;
+}
+.cartDiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.noItem{
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20%;
+    margin-left: 25%;
+}
+.orderButton{
+    text-align: center;
+    height: 40px;
+    width: 20%;
+    background-color: rgb(255,154,0);
+    color: #fff;
+    outline: none;
+    border: none;
+}
+.orderDiv{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.orders{
+    display: flex;
+    height: auto;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.orderTable{
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(247,247,247);
+    width: 50%;
+    height: auto;
+    text-align:center;
+    margin-top:2rem
+}
+th{
+    border-bottom: 2px solid ;
+    padding-bottom: 5px;
+}
+.td, td{
+    border:2px solid #fff !important;
+}
+
+.table{
+    width: 90%;
+    margin-top: 35px;
+}
+.outerCardDiv{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* media quiries  */
+
+@media screen and (max-width:700px) {
+    .search{
+        display: none;
+    }
+    .iconsDiv{
+        width: 100vw;
+        font-size: small;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    .link{
+        margin-top: 8px;
+    }
+    .icons{
+        width: 20px;
+        height: 20px;
+    }
+    .aside{
+        display: none;
+    }
+    .products{
+        width: 100%;
+        font-size: smaller;
+    }
+    .cardsDiv{
+        width: 40%;
+        height: auto;
+        margin: 5%;
+    }
+    .cardImage{
+        width: 80px;
+        height: 100px;
+        margin-left: 15%;
+    }
+    .carouselImg{
+        height: 150px !important;
+        width: 100vw !important;
+    }
+    .outerCardDiv{
+        display: flex;
+        width: 100vw;
+        height: auto;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .cardText{
+        font-size: x-small;
+        margin-top: -8px !important;
+    }
+    .cardTextTitle{
+        font-size: small !important;
+        margin-top: 5px !important;
+        font-weight: 500px;
+    }
+    .cardButton{
+        font-size: xx-small;
+        margin-top: -10px;
+    }
+    .cartDiv{
+        display: flex;
+        width: 100vw;
+    }
+    .orderButton{
+        width: 60vw;
+    }
+    .orderTable{
+        width: 90vw;
+    }
+}
