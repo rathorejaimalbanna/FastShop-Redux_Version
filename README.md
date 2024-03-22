@@ -29,6 +29,7 @@ Responsive Design: The application is designed to be responsive and accessible a
 
 Technologies Used
 React: Frontend library for building user interfaces.
+Redux: toolkit to add store for state managment
 React Router: For client-side routing.
 React Bootstrap: UI framework for responsive web design.
 Firebase: Backend-as-a-Service used for authentication and database management.
